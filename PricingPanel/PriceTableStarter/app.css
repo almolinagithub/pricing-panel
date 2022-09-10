@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 html {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background: rgb(0,6,36);
+    background: rgb(6, 7, 13);
 background: -moz-linear-gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
 background: -webkit-linear-gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
 background: linear -gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
@@ -41,7 +41,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000624",endCo
 
 body {
 	line-height: 1;
-    background-color: blue;
+    background: rgb(6, 7, 13);
+    background: -moz-linear-gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
+    background: -webkit-linear-gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
+    background: linear -gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000624",endColorstr="#453f87",GradientType=1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +132,7 @@ table {
     border-radius: 10px;
     padding: 15px 20px;
     width: 100%;
-    max-width: 960;
+    max-width: 900px;
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
@@ -160,6 +164,7 @@ table {
 
 .pricing-button:hover, .pricing-button:focus {
     background-color: rgba(64, 202, 202, 0.3);
+
 
 }
 
