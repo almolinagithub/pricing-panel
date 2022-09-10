@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(0,6,36);
+background: -moz-linear-gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
+background: -webkit-linear-gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
+background: linear -gradient(90deg, rgba(0,6,36,1) 13%, rgba(0,6,36,1) 21%, rgba(0,9,36,1) 31%, rgba(69,63,135,1) 81%, rgba(69,63,135,1) 99%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000624",endColorstr="#453f87",GradientType=1);
+}
+
+body {
+	line-height: 1;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    
+}
+
+.pricing-plan {
+    border-bottom: 1px solid rgba(34, 34, 106, 0.309);
+
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-header {
+    color:gray;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+    
+}
+
+.pricing-features {
+    margin: 50px 0 25px;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;    
+    border:1px solid rgba(34, 34, 106, 0.08);
+    
+}    
+
+.pricing-features-item:last-child{
+    border:1px solid rgba(34, 34, 106, 0.0w9);
+
+}
+
+.pricing-price {
+    font-weight: 800;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    font-size: 1.5em;
+}
+
+.pricing-button is-featured {
+    font-weight: bolder;
+    border: px purple solid;
+    padding: 10px;
+    
+
+}
+
+.panel {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 960;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+@media (min-width: 900px) {
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none ;
+        border-right: 1px solid rgba(128, 128, 128, 0.126);
+    }
+}
+
+.pricing-button {
+    border: 1px solid rgba(0, 0, 255, 0.132);
+    padding: 5px;
+    border-radius: 10px;
+    color:rgb(109, 22, 80);
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0px;
+    transition: all 200ms ease-in-out;
+
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: rgba(64, 202, 202, 0.3);
+
+}
+
+.pricing-button.is-featured {
+    background-color: blue;
+    color: white;
+}
+
+.pricing-button.is-featured:hover {
+    background-color: aqua;
+}
